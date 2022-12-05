@@ -1,0 +1,36 @@
+{
+  "name": "ik-miniprogram-ci",
+  "version": "1.0.26",
+  "description": "",
+  "main": "src/main.js",
+  "bin": {
+    "miniprogram-ci": "src/main.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --config rollup.config.js --watch",
+    "build": "rollup --config rollup.config.js",
+    "release": "release-it"
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@zerojsus/dingdingrobot": "^1.2.0",
+    "archiver": "^5.3.1",
+    "commander": "^9.4.1",
+    "dayjs": "^1.11.5",
+    "dingtalk-robot-sender": "^1.2.0",
+    "inquirer": "5",
+    "ks-miniprogram-ci": "^1.2.0",
+    "miniprogram-ci": "^1.8.35",
+    "ora": "5",
+    "shelljs": "^0.8.5",
+    "tt-ide-cli": "^0.1.15"
+  },
+  "devDependencies": {
+    "release-it": "14"
+  }
+}
